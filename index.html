@@ -2051,6 +2051,14 @@ html[data-dark="1"] .dl-dot[data-color="Black"] { box-shadow: inset 0 0 0 1px rg
 .dv-buy:hover { background: #2b2b2b; transform: translateY(-1px); }
 html[data-dark="1"] .dv-buy { background: #f4f4ee; color: #141414 !important; }
 html[data-dark="1"] .dv-buy:hover { background: #fff; }
+
+/* grid covers: shrink-wrap the image and stand it on the shelf line */
+.dl-grid-band { align-items: flex-end; }
+.dl-grid-cover { align-self: flex-end; height: auto; max-height: 100%; outline: none; border: 0; box-shadow: none; background: none; }
+.dl-grid-cover-img { height: auto; width: auto; max-width: 100%; max-height: none; }
+.dl-grid-cover-img img { height: auto; width: auto; max-width: 100%; max-height: 260px; border-radius: 2px; box-shadow: none; display: block; }
+.dl-grid-cover:focus-visible { outline: 2px solid var(--accent, #2563eb); outline-offset: 4px; }
+@media (max-width: 760px) { .dl-grid-cover-img img { max-height: 200px; } }
 </style>
 </head>
 <body>
